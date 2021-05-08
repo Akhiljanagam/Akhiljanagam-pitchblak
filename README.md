@@ -1,2 +1,0 @@
-# Akhiljanagam.io
-stonedge website
