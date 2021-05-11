@@ -307,20 +307,19 @@ h2 span {
 
 
 .btn-brochure{
-    box-sizing: border-box;
-    border: 1px solid #000;
-    height: 70px;
-    width: 220px;
-    border-radius: 20px;
-    font-size: 20px;
-    background-color: #37517e;
-    color: white;
-    transform: scale(0.3s);
+  font-size: 25px;
+  height: 60px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #012970;
+  color: #ffffff;
+  transition: transform .5s ease;
 }
 .btn-brochure:hover{
-    background-color:#f1f1f1 ;
-    color: #37517e;
-    transform: scale(1.04);
+  background-color: #0b3988;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 
@@ -329,5 +328,32 @@ th, td {
     border: 1px solid rgb(187, 187, 187);
     padding: 15px;
   }
+
+.processing img{
+
+  transition: transform .5s ease;
+}
+.processing img:hover{
+  transform: scale(1.1);
+}
+
+.smart img{
+
+  transition: transform .5s ease;
+}
+.smart img:hover{
+  transform: scale(1.1);
+}
+
+.accessible img{
+
+  transition: transform .5s ease;
+}
+.accessible img:hover{
+  transform: scale(1.1);
+}
+
+
+
 
 
