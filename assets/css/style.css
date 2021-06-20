@@ -159,17 +159,21 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 50px 0;
+  background: rgb(34, 21, 206);
+
 }
 
 .header.header-scrolled {
-  background: #fff;
-  padding: 15px 0;
+  background: rgb(34, 21, 206);
+  padding: 50px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-}
+}  */
+
 
 .header .logo {
   line-height: 0;
@@ -178,13 +182,14 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  color: #fff;
 }
 
 .header .logo span {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: #ffffff;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -195,13 +200,14 @@ section {
 /**
 * Desktop Navigation 
 */
-.navbar {
+
+/*.navbar {
   padding: 0;
-}
+} */
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+ 
   display: flex;
   list-style: none;
   align-items: center;
@@ -215,17 +221,17 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+/*  padding: 10px 0 10px 30px; */
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  color: #013289;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
 
 .navbar a i {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -257,7 +263,7 @@ section {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #012970;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -417,20 +423,22 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
-  background-size: cover;
+ /* height: 100vh;
+  background: url(../img/hero-bg.png) top center no-repeat; 
+  background-size: cover; */
 }
 
 .hero h1 {
+  
   margin: 0;
+  padding-top: 100px;
   font-size: 48px;
   font-weight: 700;
-  color: #012970;
+  color: #fff;
 }
 
 .hero h2 {
-  color: #444444;
+  color: #fff;
   margin: 15px 0 0 0;
   font-size: 18px;
 }
@@ -468,9 +476,9 @@ section {
 }
 
 @media (min-width: 1024px) {
-  .hero {
-    background-attachment: fixed;
-  }
+ /* .hero {
+    background-attachment: fixed; 
+  } */
 }
 
 @media (max-width: 991px) {
@@ -511,24 +519,26 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: #f6f9ff;
+  background: transparent;
   padding: 40px;
+  padding-top: 70px;
+  padding-left: 65%;
 }
 
 .about h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #4154f1;
-  text-transform: uppercase;
-}
+  font-size: 30px;
+  font-weight: 500;
+  color: #012970;
+  }
 
 .about h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #012970;
+  color: #fff;
+  margin: 15px 0 0 0;
+  font-size: 18px;
 }
 
 .about p {
+  color: #fff;
   margin: 15px 0 30px 0;
   line-height: 24px;
   
@@ -541,7 +551,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #012970;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -566,11 +576,15 @@ section {
 # Business
 --------------------------------------------------------------*/
 .values .box {
-  padding: 30px;
+  padding: 0px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   text-align: center;
   transition: 0.3s;
   height: 100%;
+  width: fit-content;
+  border: 1px;
+  border-bottom: 2px solid #fff;
+  border-radius: 10px;
 }
 
 .values .box img {
@@ -581,7 +595,7 @@ section {
 
 .values .box h3 {
   font-size: 24px;
-  color: #012970;
+  color: #fff;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -605,7 +619,7 @@ section {
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
-  padding: 60px 30px;
+  padding: 10px 10px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -623,9 +637,9 @@ section {
 }
 
 .services .service-box h3 {
-  color: #444444;
-  padding: 30px;
-  font-weight: 700;
+  color: #012970;
+  padding: 10px;
+  font-weight: 100;
 }
 
 .services .service-box .read-more {
@@ -879,7 +893,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background: transparent;
   padding: 30px;
 }
 
@@ -904,7 +918,7 @@ section {
 }
 
 .contact .php-email-form {
-  background: #fafbff;
+  background: transparent;
   padding: 30px;
   height: 100%;
 }
@@ -1039,7 +1053,7 @@ Our Solutions
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: transparent;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -1047,7 +1061,7 @@ Our Solutions
 .footer .footer-newsletter {
   padding: 50px 0;
   background: #f6f9ff;
-  border-top: 1px solid #e1ecff;
+  
 }
 
 .footer .footer-newsletter h4 {
@@ -1095,10 +1109,8 @@ Our Solutions
 }
 
 .footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
+  background: transparent;
   background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
   padding: 60px 0 30px 0;
 }
 
@@ -1126,7 +1138,7 @@ Our Solutions
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: #fff;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -1141,20 +1153,20 @@ Our Solutions
 .footer .footer-top .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: #fff;
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  color: #4154f1;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #012970;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -1188,7 +1200,7 @@ Our Solutions
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #013289;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
